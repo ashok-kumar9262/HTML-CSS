@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 35px 12%;
+            background: rgba(0, 0, 0, 0.842);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+        .logo{
+            font-size: 25px;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+        .logo:hover{
+            color: orangered;
+            text-shadow: 0 0 25px orangered,
+                        0 0 50px orangered;
+            transform: scale(1.1);
+       
+        }
+        span{
+            color: orangered;
+        }
+        .navbar a{
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
+            margin: 0 20px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease;
+        }
+        .navbar a:hover,
+        .navbar a:active{
+            color: orangered;
+            border-bottom: 3px solid orangered;
+
+        }
+        .contant{
+            padding: 10px 28px;
+            background-color: white;
+            color: black;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+        .contant:hover{
+            background-color: orangered;
+            box-shadow: 0 0 25px orangered;
+            color: white;
+        }
+        .home{
+            width: 100%;
+            min-height: 100vh;
+            background: rgb(241, 241, 241);
+            display: flex;
+            align-items: center;
+            gap: 7em;
+            padding: 10px 15% 0;
+        }
+        .home-contact{
+            max-width: 800px;
+
+        }
+        .home-conatact h3{
+            font-size: 42px;
+
+        }
+        .home-contact h1{
+            font-size: 62px;
+            line-height: 1.2;
+        
+        }
+        .home-contact p{
+            font-size: 18px;
+            margin: 25px 0 30px;
+        }
+        .btn-box{
+            width: 345px;
+            display: flex;
+            gap: 2em;
+        }
+        .btn-1{
+            padding: 15px 28px;
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+        }
+        .btn-1:hover{
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+        }
+        .btn-2{
+            padding: 15px 28px;
+            background-color: orangered;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+        .btn-2:hover{
+            background-color: white;
+            color: orangered;
+        }
+        .img-box img{
+            border-radius: 90%;
+            width:950px ;
+        }
+        ::-webkit-scrollbar{  
+            width: 15px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: orangered;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: rgba(0, 0, 0, 0.815);
+            width: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>PL</span>UTO</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">Service</a>
+            <a href="#">Exerprince</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+        </nav>
+
+        <a href="#" class="contant">Contant Me</a>
+
+    </header>
+
+    <section class="home">
+        <div class="home-contact">
+            <h3>Hi</h3>
+            <h1>I, am <span> CD Ashok</span> Frontend Devloper</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam. Minima architecto, ab natus consequatur consequuntur rerum autem nam voluptates.</p>
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Exerprince</button> 
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg" alt="">
+
+        </div>
+        
+    </section>
+    
+    
+</body>
+</html>
